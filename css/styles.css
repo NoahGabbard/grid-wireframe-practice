@@ -1,0 +1,77 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "aside"
+        "columns-container"
+        "aside2"
+        "footer";
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: #ccc;
+    height: auto; 
+    max-width: 500px; 
+    margin: 20px auto; 
+}
+
+header {
+    grid-area: header;
+    background-color: #8e44ad;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.columns-container {
+    grid-area: columns-container;
+    background-color: #2ecc71; 
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.column {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.aside2 {
+    grid-area: aside2;
+    background-color: #16a085;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #d35400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}

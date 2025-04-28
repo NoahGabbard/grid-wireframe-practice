@@ -75,3 +75,31 @@ footer {
     font-weight: bold;
     border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "header"
+            "columns-container"
+            "aside"
+            "aside2"
+            "footer";
+        grid-gap: 5px;
+        padding: 10px;
+    }
+
+    .columns-container {
+        grid-template-rows: auto; /* Adjust rows for smaller screens */
+        grid-template-columns: 1fr; /* Stack columns vertically */
+    }
+
+    .column {
+        padding: 10px; /* Reduce padding for smaller screens */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    aside, .aside2, footer, header {
+        padding: 10px; /* Reduce padding for all sections */
+        font-size: 1rem; /* Adjust font size */
+    }
+}
